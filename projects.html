@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Power BI Portfolio</title>
+  <style>
+    /* Sfondo e scrollbar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: 100% 100vh;
+      min-height: 100vh;
+      text-align: center;
+      scrollbar-width: thin;
+      scrollbar-color: #302b63 #1f1b47;
+    }
+    body::-webkit-scrollbar {
+      width: 16px;
+    }
+    body::-webkit-scrollbar-track {
+      background: #1f1b47;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #302b63, #0f0c29);
+      border-radius: 8px;
+    }
+
+    /* Navbar */
+    nav {
+      padding: 0px;
+      background: #0f0c29;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 0px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a.active {
+	background: linear-gradient(135deg, #302b63, #4a4eaa);
+	color: white;
+	}
+    nav a:hover {
+      background: linear-gradient(135deg, #4a4eaa, #6e78d6);
+      color: #0f0c29;
+    }
+
+    /* Sezione principale */
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .intro {
+      color: #ccc;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .project {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .project h2 {
+      color: white;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #ddd;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    .badges {
+      margin-top: 10px;
+    }
+    .badges span {
+      display: inline-block;
+      background: #4a4eaa;
+      padding: 6px 12px;
+      border-radius: 20px;
+      color: white;
+      font-size: 0.9em;
+      margin-right: 8px;
+      margin-top: 8px;
+    }
+
+    .project img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 15px;
+      color: #aabbee;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="contacts.html">Contacts</a>
+  </nav>
+
+  <main>
+    <h1>Power BI Projects</h1>
+    <p class="intro">
+      Explore a selection of my work*, where I’ve transformed raw data into compelling dashboards using a variety of techniques. 
+	  This section is continuously updated, and new reports will be available soon.
+
+	  <p style="font-size: 0.650rem; color: grey;">
+		*The projects and reports presented in this portfolio are for demonstration purposes only. All data used is either fictional, anonymized, or publicly available and does not represent any real individuals or organizations unless explicitly stated.<br>
+		Some images, icons, or visual elements included in the reports or documentation may be the property of third parties. They are used here solely for illustrative purposes. All rights belong to their respective owners.
+	  </p>
+
+
+    </p>
+
+    <div class="project">
+      <h2>Sales Performance Dashboard</h2>
+      <p>This interactive report tracks sales KPIs, trends, and regional performance. It allows management to quickly understand sales dynamics, compare time periods, and drill down by product category and region.</p>
+      <div class="badges">
+		<span>Sales</span>
+        <span>DAX</span>
+        <span>Parameters</span>
+		<span>html</span>
+		<span>Bookmarks</span>
+	  </div>
+		<img src="assets\images\Sales.png" alt="Sales dashboard preview" />	
+		<p align="center">
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiZTM5YjI1ZmEtMWU5MC00ZjYwLWJiNDItYjRmMGYxY2QyZDYyIiwidCI6ImM2Nzc1YjVkLWY1YTktNGQwMS1hOWI3LTMzZGU3MDQ3NmUxMyJ9" target="_blank" style="text-decoration:none; color:#aabbee;">
+				🔗 Go to Report
+			</a>
+		</p>
+    </div>
+
+    <div class="project">
+      <h2>Auto configurator</h2>
+      <p style="padding bot:0px">
+	  The report allows users to configure a vehicle by selecting model, and color. It dynamically updates final pricing and technical specifications based on selections. It includes features for option comparison and immediate visualization of configuration changes.<br>
+	  This is a simple example of product configurator build using html visuals. Similar use cases could be implemented in combination with Power automate to create a flow that triggers an email with the product quotation.
+	  </p>
+	  <p style="padding top:0px; padding bot:0px; font-size: 0.650rem; color: grey;">
+		All data used in this report is either fictional and does not represent any real organizations.<br>
+		Images included in the report are property of third parties. They are used here solely for illustrative purposes. All rights belong to their respective owners.
+	  </p>
+	  <div class="badges">
+		<span>Product configurator</span>
+        <span>DAX</span>
+        <span>html</span>
+      </div>
+		<img src="assets\images\Auto configurator.png" alt="Auto configurator review" />	
+		<p align="center">
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiYzVlNjQ5ZmQtZDBmYy00M2Y3LTg2ZjgtNzEyNDg0YjBiNGI3IiwidCI6ImM2Nzc1YjVkLWY1YTktNGQwMS1hOWI3LTMzZGU3MDQ3NmUxMyJ9" target="_blank" style="text-decoration:none; color:#aabbee;">
+				🔗 Go to Report
+			</a>
+		</p>      
+    </div>
+
+    <div class="project">
+      <h2>Social media engagements</h2>
+      <p>
+		In this report we want to measure user engagements on different social media in response to marketing campaigns. Country, product, and campaign analyses are performed using navigation techniques, customized visuals and graphic elements.
+	  </p>
+      <p style="padding top:0px; padding bot:0px; font-size: 0.650rem; color: grey;">
+		All data used in this report is either fictional and does not represent any real organizations.<br>
+		Images included in the report are property of third parties. They are used here solely for illustrative purposes. All rights belong to their respective owners.
+	  </p>
+	  <div class="badges">
+        <span>Social media management</span>
+		<span>Figma</span>
+        <span>Deneb</span>
+        <span>Custom visuals</span>
+		<span>Bookmarks</span>
+      </div>
+      	<img src="assets\images\Social media engagements.png" alt="Social media engagements preview" />	
+		<p align="center">
+			<a href="https://app.powerbi.com/view?r=eyJrIjoiMGE0YjY0ZDYtMGVjYy00YmRkLWJjM2QtZDQwODE0MTQ0YWJlIiwidCI6ImM2Nzc1YjVkLWY1YTktNGQwMS1hOWI3LTMzZGU3MDQ3NmUxMyJ9" target="_blank" style="text-decoration:none; color:#aabbee;">
+				🔗 Go to Report
+			</a>
+		</p>    
+	</div>
+	
+
+    <div class="project">
+      <h2>Logistics report</h2>
+      <p>Coming soon!</p>
+      <div class="badges">
+        <span>Logistics</span>
+      </div>
+      	<div style="text-align: center;">
+			<img src="assets/images/Lock.png" alt="Locked content" />
+		</div>	
+		<p align="center">
+		</p>    
+	</div>
+	
+    <div class="project">
+      <h2>HR report</h2>
+      <p>Coming soon!</p>
+      <div class="badges">
+        <span>HR</span>
+      </div>
+      	<div style="text-align: center;">
+			<img src="assets/images/Lock.png" alt="Locked content" />
+		</div>		
+		<p align ="center">
+		</p>    
+	</div>
+	
+  </main>
+</body>
+</html>

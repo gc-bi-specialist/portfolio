@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About - Power BI Portfolio</title>
+  <style>
+    /* Sfondo */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100vh;
+      text-align: center;
+      min-height: 100vh;
+
+      /* Scrollbar Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: #302b63 #1f1b47;
+    }
+
+    /* Scrollbar Chrome/Edge/Safari */
+    body::-webkit-scrollbar {
+      width: 16px;
+    }
+    body::-webkit-scrollbar-track {
+      background: #1f1b47;
+      border-radius: 8px;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #302b63, #0f0c29);
+      border-radius: 8px;
+      border: 3px solid #1f1b47;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #4a4eaa, #1a1a3d);
+    }
+
+    /* Navbar */
+    nav {
+      padding: 0px;
+      background: #0f0c29;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 0px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a.active {
+	background: linear-gradient(135deg, #302b63, #4a4eaa);
+	color: white;
+	}
+    nav a:hover {
+      background: linear-gradient(135deg, #4a4eaa, #6e78d6);
+      color: #0f0c29;
+    }
+
+
+    /* Testo centrale */
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 40px 20px;
+      min-height: calc(100vh - 80px);
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" >Home</a>
+  <a href="about.html"class="active">About</a>
+  <a href="skills.html">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contacts.html">Contacts</a>
+</nav>
+
+  <main>
+    <h1>About Me</h1>
+	
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0;">
+    <p style="flex: 1; min-width: 250px; max-width: 500px; text-align: left;">
+    I am a data professional with over 7 years of experience in <strong>Data Analytics</strong> and <strong>Business Intelligence</strong>.<br>
+	I am specialized in the development of scalable analytical solutions using <strong>Power BI</strong>.
+  </p>
+    <img src="assets/images/BI icons purple.png" alt="bi_icons" style="flex: 0 0 300px; max-width: 200px; border-radius: 10px;"/>
+  </div>
+  
+<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0;">
+	<img src="assets/images/Tools.png" alt="bi_icons" style="flex: 0 0 300px; max-width: 200px; border-radius: 10px;"/>
+     <p style="flex: 1; min-width: 250px; max-width: 500px; text-align: right;">
+		I combine advanced skills in <strong>Power BI</strong> together with <strong>SQL</strong>, and <strong>Python</strong> to manage the full data lifecycle: from data preparation and modeling to the design of interactive, <br>
+		high-performance dashboards.
+	</p>
+ </div>
+
+
+  <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0;">
+    <p style="flex: 1; min-width: 250px; max-width: 500px; text-align: left;">
+      I have worked across complex cloud ecosystems, integrating data and processes on platforms such as <strong>Azure</strong>, <strong>AWS</strong>, and <strong>Databricks</strong>, delivering value to business projects across various industries.
+    </p>
+    <img src="assets/images/Cloud.png" alt="Cloud platforms" style="flex: 0 0 300px; max-width: 200px; border-radius: 10px;"/>
+  </div>
+
+	<div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center; margin: 20px 0;">
+		<img src="assets/images/Certifications.png" alt="certifications" style="flex: 0 0 300px; max-width: 250px; border-radius: 10px;"/>
+		<p style="flex: 1; min-width: 250px; max-width: 500px; text-align: right;">
+			In addition to hands-on experience, I actively invest in continuous learning and stay up to date with the latest technologies in the data and cloud ecosystem.<br>
+			I hold several Microsoft certifications that reflect both my technical expertise and my commitment to professional growth, including the
+			<strong>PL-300</strong> (Power BI Data Analyst Associate), <strong>DP-600</strong> (Fabric Analytics Engineer Associate), 
+			<strong>DP-900</strong> (Azure Data Fundamentals), and <strong>AZ-900</strong> (Azure Fundamentals).
+		</p>
+	</div>
+  
+  
+</main>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contacts - Power BI Portfolio</title>
+  <style>
+    /* Sfondo */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100vh;
+      min-height: 100vh;
+      text-align: center;
+
+      scrollbar-width: thin;
+      scrollbar-color: #302b63 #1f1b47;
+    }
+    body::-webkit-scrollbar {
+      width: 16px;
+    }
+    body::-webkit-scrollbar-track {
+      background: #1f1b47;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #302b63, #0f0c29);
+      border-radius: 8px;
+    }
+
+    /* Navbar */
+    nav {
+      padding: 0px;
+      background: #0f0c29;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 0px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a.active {
+	background: linear-gradient(135deg, #302b63, #4a4eaa);
+	color: white;
+	}
+    nav a:hover {
+      background: linear-gradient(135deg, #4a4eaa, #6e78d6);
+      color: #0f0c29;
+    }
+
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      min-height: calc(100vh - 80px);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .contact-list {
+      font-size: 1.2em;
+      color: #ddd;
+      line-height: 2em;
+    }
+
+    .contact-list a {
+      color: #aabbee;
+      text-decoration: none;
+    }
+
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html" class="active">Contacts</a>
+  </nav>
+
+  <main>
+  <h1>Get in Touch</h1>
+  <p style="max-width: 600px; margin: 0 auto 30px; text-align: center;">
+    Thanks for visiting my portfolio! Feel free to reach out using any of the contacts below.<br>
+	I’d love to hear from you.
+  </p>
+  <div class="contact-list">
+    📧  <a href="mailto:g.contino.analytics@gmail.com">g.contino.analytics@gmail.com</a><br>
+    💼  <a href="https://www.linkedin.com/in/giuseppe-contino-a9572a198/" target="_blank">Linkedin</a><br>
+    
+  </div>
+</main>
+</body>
+</html>

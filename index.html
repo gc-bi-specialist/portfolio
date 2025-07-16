@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - Power BI Portfolio</title>
+  <style>
+    /* Sfondo e scrollbar */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100vh;
+      min-height: 100vh;
+      text-align: center;
+      scrollbar-width: thin;
+      scrollbar-color: #302b63 #1f1b47;
+    }
+    body::-webkit-scrollbar {
+      width: 16px;
+    }
+    body::-webkit-scrollbar-track {
+      background: #1f1b47;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #302b63, #0f0c29);
+      border-radius: 8px;
+    }
+
+    /* Navbar */
+    nav {
+      padding: 0px;
+      background: #0f0c29;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 0px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a.active {
+	background: linear-gradient(135deg, #302b63, #4a4eaa);
+	color: white;
+	}
+    nav a:hover {
+      background: linear-gradient(135deg, #4a4eaa, #6e78d6);
+      color: #0f0c29;
+    }
+
+
+
+
+    /* Sezione principale */
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      min-height: calc(100vh - 80px);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.4em;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 1.1em;
+      color: #ddd;
+      max-width: 600px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+	.quote {
+	  font-style: italic;
+	  align: center;
+	  text-align: center;
+	  color: #bbb;
+	  margin-top: 60px; 
+	  margin-bottom: 10px;
+	}
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .buttons a {
+      background: linear-gradient(135deg, #302b63, #4a4eaa);
+      color: white;
+      text-decoration: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.4s ease, transform 0.2s;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .buttons a:hover {
+      background: linear-gradient(135deg, #4a4eaa, #6e78d6);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contacts.html">Contacts</a>
+  </nav>
+
+  <main>
+    <h1>Welcome to my Power BI Portfolio</h1>
+
+
+    <p>
+      Hello! I'm Giuseppe and I’m a Business Intelligence Specialist passionate about turning complex datasets into intuitive, impactful visual stories. With experience in <strong>Power BI</strong>, <strong>data modeling</strong>, <strong>cloud platforms</strong>, and <strong>automation</strong>, I help businesses make confident, data-informed decisions.
+    </p>
+
+	<p>
+	In this portfolio, you’ll find a selection of <strong>Power BI reports</strong> that highlight my expertise in advanced data visualization techniques and visual storytelling. Each project demonstrates how thoughtful report design, interactivity, and UX best practices can elevate data understanding and empower faster, smarter business decisions.	
+	</p>
+
+
+
+<!-- INIZIO Carosello -->
+<div style="max-width: 700px; margin: 00px auto; text-align: center;">
+  <h3>Projects gallery</h3>
+  <div class="carousel-container">
+	<a href="projects.html" target="_blank" class="carousel-link">
+	  <div class="carousel-track">
+		<img class="carousel-image" src="assets/images/Sales.png" alt="Projects" />
+		<img class="carousel-image" src="assets/images/Auto configurator.png" alt="Projects" />
+		<img class="carousel-image" src="assets/images/Social media engagements.png" alt="Projects" />
+	  </div>
+	</a>
+	
+	<button class="arrow left" onclick="prevSlide()" aria-label="Previous slide">
+	  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+		<path d="M15 18L9 12L15 6" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+	  </svg>
+	</button>
+
+	<button class="arrow right" onclick="nextSlide()" aria-label="Next slide">
+	  <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+		<path d="M9 6L15 12L9 18" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+	  </svg>
+	</button>	
+		
+	
+  </div>
+</div>
+
+<style>
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-link {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+  user-select: none;
+}
+
+  .carousel-image.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .carousel-buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .carousel-buttons button {
+    padding: 8px 16px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-buttons button:hover {
+    background-color: #666;
+  }
+  
+	.arrow {
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	  background: none;
+	  border: none;
+	  padding: 5px;
+	  cursor: pointer;
+	  z-index: 2;
+	  opacity: 0.8;
+	  transition: opacity 0.3s ease;
+	}
+
+	.arrow:hover {
+	  opacity: 1;
+	}
+
+	.arrow.left {
+	  left: 10px;
+	}
+
+	.arrow.right {
+	  right: 10px;
+	}
+
+	.arrow svg {
+	  stroke: white;
+	}  
+ 
+ 
+</style>
+
+<script>
+const track = document.querySelector(".carousel-track");
+const images = document.querySelectorAll(".carousel-image");
+let current = 0;
+let interval;
+
+function updateSlidePosition() {
+  const imageWidth = images[0].offsetWidth; // larghezza fissa immagine
+  track.style.transform = `translateX(${-current * imageWidth}px)`;
+}
+
+function nextSlide() {
+  current = (current + 1) % images.length;
+  updateSlidePosition();
+  resetAutoplay();
+}
+
+function prevSlide() {
+  current = (current - 1 + images.length) % images.length;
+  updateSlidePosition();
+  resetAutoplay();
+}
+
+function resetAutoplay() {
+  clearInterval(interval);
+  startAutoplay();
+}
+
+function startAutoplay() {
+  interval = setInterval(nextSlide, 4000);
+}
+
+function stopAutoplay() {
+  clearInterval(interval);
+}
+
+// Imposta posizione iniziale
+updateSlidePosition();
+startAutoplay();
+
+</script>
+
+
+
+
+	
+	<p class="quote">“Without data, you're just another person with an opinion.” <br>
+	W. Edwards Deming 
+	</p>
+	
+  </main>
+</body>
+</html>

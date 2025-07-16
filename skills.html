@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Power BI Portfolio</title>
+  <style>
+    /* Sfondo */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100% 100vh;
+      text-align: center;
+      min-height: 100vh;
+
+      /* Scrollbar Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: #302b63 #1f1b47;
+    }
+
+    /* Scrollbar Chrome/Edge/Safari */
+    body::-webkit-scrollbar {
+      width: 16px;
+    }
+    body::-webkit-scrollbar-track {
+      background: #1f1b47;
+      border-radius: 8px;
+    }
+    body::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #302b63, #0f0c29);
+      border-radius: 8px;
+      border: 3px solid #1f1b47;
+    }
+    body::-webkit-scrollbar-thumb:hover {
+      background: linear-gradient(180deg, #4a4eaa, #1a1a3d);
+    }
+
+    /* Navbar */
+    nav {
+      padding: 0px;
+      background: #0f0c29;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 8px 16px;
+      border-radius: 0px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    nav a.active {
+	background: linear-gradient(135deg, #302b63, #4a4eaa);
+	color: white;
+	}
+    nav a:hover {
+      background: linear-gradient(135deg, #4a4eaa, #6e78d6);
+      color: #0f0c29;
+    }
+
+
+    /* Contenuto principale */
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 40px 20px;
+      min-height: calc(100vh - 80px);
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #ccc;
+      border-bottom: 2px solid #4a4eaa;
+      padding-bottom: 8px;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #ddd;
+    }
+
+    strong {
+      color: #aabbee;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" >Home</a>
+  <a href="about.html">About</a>
+  <a href="skills.html" class="active">Skills</a>
+  <a href="projects.html">Projects</a>
+  <a href="contacts.html">Contacts</a>
+</nav>
+
+  <main>
+    <h1>My Skills</h1>
+
+    <section>
+      <h2>Power BI</h2>
+      <ul>
+        <li><strong>Data Modeling:</strong> Star schema, snowflake schema, normalization, relationship management</li>
+		<li><strong>DAX (Data Analysis Expressions):</strong> Advanced calculations, measures, calculated columns, KPIs, optimization</li>
+		<li><strong>Power Query (M Language):</strong> Data transformation and cleansing (SQL and Python preferred)</li>
+		<li><strong>Report design and visualization:</strong> Figma, Visual Calculations, Deneb visuals, html visuals</li>
+		<li><strong>Advanced UX techniques:</strong> Bookmarks, Tooltips, Drillthrough </li>
+		<li><strong>Report life-cycle:</strong> PBI Service, Gateways, Deployment Pipelines for managing dev/test/prod flows</li>
+		<li><strong>Security:</strong> Row-Level Security (RLS) and Object-Leve Security (OLS) for managing data access control</li>
+        <li><strong>Optimization:</strong> Incremental refresh, Tabular editor for managing large datasets, DAX Studio for query optimization </li>
+	  </ul>
+    </section>
+
+    <section>
+      <h2>Other Tools</h2>
+      <ul>
+	    <li><strong>ETL & Data preparation:</strong> SQL (PostgreSQL, T-SQL, spark SQL), Python (Pyspark, Pandas)
+		<li><strong>Cloud platforms:</strong> Databricks, AWS, Azure</li>
+        <li><strong>UX/UI & Prototyping:</strong> Figma, Power Point</li>
+        <li><strong>PM & Colaboration:</strong> Azure DevOps, Jira, Trello, Git, Teams</li>
+		<li><strong>Office tools:</strong> Word, Excel (advanced: Power Query, Power Pivot), Power Point</li>
+	  
+	  </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li><strong>PL-300:</strong> Microsoft Power BI Data Analyst</li>
+		<li><strong>DP-600:</strong> Microsoft Fabric Analytics Engineer Associate</li>
+        <li><strong>DP-900:</strong> Microsoft Azure Data Fundamentals</li>
+		<li><strong>AZ-900:</strong> Microsoft Azure Fundamentals</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Soft Skills & Professional Traits</h2>
+      <ul>
+		<li><strong>Communication:</strong> Clear, concise data storytelling and stakeholder management for requirements collection</li>
+        <li><strong>Problem Solving:</strong> Analytical thinking to translate business needs into technical solutions</li>
+        <li><strong>Collaboration:</strong> Teamwork in cross-functional environments</li>
+        <li><strong>Continuous Learning:</strong> Staying up to date with latest BI trends and technologies</li>
+        <li><strong>Project Management:</strong> Planning, prioritization, and agile delivery</li>
+
+	  </ul>
+    </section>
+
+  </main>
+</body>
+</html>
